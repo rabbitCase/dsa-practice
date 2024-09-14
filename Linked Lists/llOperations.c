@@ -1,4 +1,4 @@
-//Various operations on a singly linked list
+//Performing Various operations on a singly linked list
 #include <stdio.h>
 #include <stdlib.h>
 struct node{
@@ -36,7 +36,7 @@ void createList(struct node **head){
     }
 }
 
-void insertAfter(struct node **head){
+void insertAfter(struct node **head){//insert an element after a specified node
     int x,data,flag=0;
     struct node *temp =(struct node*)malloc(sizeof(struct node));
     if(*head==NULL){
@@ -68,9 +68,9 @@ void insertAfter(struct node **head){
    
 }
 
-void insertBefore(struct node **head){
+void insertBefore(struct node **head){//insert an element before a specified node
     struct node *temp =(struct node*)malloc(sizeof(struct node));
-    int x, data,flag=0;
+    int x, data,flag=0;//flag to ping the existence of inputted node
     printf("Enter element before which data will be entered: ");
     scanf("%d",&data);
     if(*head==NULL){
@@ -177,7 +177,7 @@ void sortList(struct node **head){
     }while(isSwapped);
 }
 
-void deleteAlternate(struct node **head){
+void deleteAlternate(struct node **head){//delete every alternate node from the list
     if(*head==NULL || (*head)->link==NULL){
         printf("\nList is empty or not enough nodes.\n");
         return;
@@ -205,7 +205,7 @@ int main()
     do{
         printf("Enter your choice: ");
         scanf("%d",&x);
-        switch(x){
+        switch(x){//switch case for making the program menu-driven
             case(0):
             disp(head); break;
 
