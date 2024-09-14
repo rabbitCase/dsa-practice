@@ -1,4 +1,4 @@
-//Leetcode Medium 189: Rotate Array by k places//
+//Leetcode Medium 189: Rotate Array by k places
 #include <iostream>
 using namespace std;
 int main(){
