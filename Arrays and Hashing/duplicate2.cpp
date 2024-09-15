@@ -19,7 +19,7 @@ public:
         return false;
     }
 };
-int main(){
+int main(){//simple test
     Solution hello;
     int k=2;
     vector <int> nums={1,2,3,1,2,3};
