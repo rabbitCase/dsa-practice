@@ -1,4 +1,4 @@
-//Number of subarrays with sum K//
+//Number of subarrays with sum K
 #include <iostream>
 #include <vector>
 #include <bits/stdc++.h>
