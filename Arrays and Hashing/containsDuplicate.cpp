@@ -1,4 +1,4 @@
-//Leetcode Easy 217: return true in given array has any duplicates
+//Leetcode Easy 217: return true if given array has any duplicates
 #include <iostream>
 #include <bits/stdc++.h>
 #include <vector>
