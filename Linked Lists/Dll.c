@@ -2,9 +2,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 struct dnode{
-    struct dnode *llink;//left link
+    struct dnode *llink;//represents left link
     int data;
-    struct dnode *rlink;//right link
+    struct dnode *rlink;//represents right link
 }*head=NULL;
 
 void display(struct dnode *head){
