@@ -42,9 +42,9 @@ struct dnode* insertElement(struct dnode *head){
 }
 
 int main() {
+    head = insertElement(head);//instead of updating head repreatedly in the main function, we can use double pointer(**head) in the insertElement function
+    head = insertElement(head);//using double pointer will require us to pass the address of head (&head) instead of just head
     head = insertElement(head);
-    head = insertElement(head);
-    head = insertElement(head);
-    display(head);
+    display(head);//display function needn't use double pointers since no modification of head is being done
     return 0;
 }
