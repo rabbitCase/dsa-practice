@@ -1,4 +1,9 @@
-//structure of a doubly linked list
+//structure of a doubly linked list (updated with double pointers)
+
+
+
+/*
+
 #include <stdio.h>
 #include <stdlib.h>
 struct dnode{
@@ -48,3 +53,4 @@ int main() {
     display(head);//display function needn't use double pointers since no modification of head is being done
     return 0;
 }
+*/
