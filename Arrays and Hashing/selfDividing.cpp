@@ -27,7 +27,7 @@ public:
 int main(){
     Solution sol;
     vector <int> x;
-    x=sol.selfDividingNumbers(1,2256654);
+    x=sol.selfDividingNumbers(1,225);
     for(int i=0;i<x.size();i++){
         cout<<x[i]<<" ";
     }
