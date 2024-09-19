@@ -1,3 +1,5 @@
+//Leetcode Easy 728: Return all self dividing numbers in the range given
+//Self dividing numbers are divisilble by every digit they contain
 #include <iostream>
 #include <vector>
 #include <bits/stdc++.h>
@@ -12,13 +14,13 @@ public:
             num=i;
             while(num>0){
               temp=num%10;
-              if(temp==0 || i%temp!=0){
+              if(temp==0 || i%temp!=0){//temp==0 condition to be checked to avoid division by zero
                 check=false;
               }
               num/=10;
               }
             if(check){
-                result.push_back(i);
+                result.push_back(i);//.push_back() is a part of std::vector and it adds specified element to vector <int> result
             }
         }
         return result;
