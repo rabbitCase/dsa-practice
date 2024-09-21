@@ -8,7 +8,7 @@ int main(){
     cin >> a[i];
     cin>>k;
     for(i=0;i<k;i++){
-        temp=a[n-1];
+        temp=a[n-1];//last element
         for(j=n-1;j>=0;j--){
             a[j]=a[j-1];
         }
