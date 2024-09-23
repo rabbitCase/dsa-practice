@@ -177,19 +177,16 @@ void sortList(struct node **head){
     }while(isSwapped);
 }
 
-void deleteAlternate(struct node **head){//delete every alternate node from the list
+void deleteAlternate(struct node **head){//delete every alternate node
     if(*head==NULL || (*head)->link==NULL){
         printf("\nList is empty or not enough nodes.\n");
         return;
     }
     printf("\nDeleting alternate nodes: \n");
-    struct node *temp=*head,*next=temp->link;
-    while(temp!=NULL && next!=NULL){
-        temp->link=next->link;
+    struct node *temp=*head;
+    while(temp!=NULL && temp->link!=NULL){
+        temp->link=temp->link->link;
         temp=temp->link;
-        free(next);
-        if(temp!=NULL)
-        next=temp->link;
     } 
 }
 void insertAndMaintainOrder(struct node **head){
