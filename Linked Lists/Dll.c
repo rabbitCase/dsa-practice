@@ -1,4 +1,4 @@
-//structure of a doubly linked list (updated with double pointers)
+//structure of a doubly linked list 
 #include <stdio.h>
 #include <stdlib.h>
 struct dnode{
@@ -48,7 +48,7 @@ int main() {
 }
 
 
-//Previous code
+//Previous code (without double pointers)
 /*
 #include <stdio.h>
 #include <stdlib.h>
