@@ -18,7 +18,7 @@ public:
     }                  //the newly added element can be equal
     return {};         //to the complement in the same loop cycle
     }                  //which means i will be equal to mpp[complement]
-};                     //ex: {3,3} and k=6, here when i=0 mpp has
+};                     //ex: nums<int>= {3,3} and k=6, here when i=0 mpp has
                        //3->0, the 'if' condition satisfies and function returns
                        //[0,0] when it should be [0,1], so first check
                        //if condition, and then add to the map
