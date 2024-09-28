@@ -10,7 +10,7 @@ public:
         unordered_map <int,int> mpp;
     int complement;
     for(int i=0;i<nums.size();i++){
-        complement=target-nums[i];
+        complement=target-nums[i];//complement is k-a
         if(mpp.count(complement)){//.count() returns 1 if index exists
              return {mpp[complement],i};
         }
