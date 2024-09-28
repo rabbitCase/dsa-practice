@@ -1,4 +1,5 @@
-//Leetcode Easy 1: Two Sum
+//Leetcode Easy 1: Given an array of integers and a tarket k, we have to return indices two indices i,j such that a[i]+a[j]=k
+//Concept: Traverse through the array and for every element a, check if k-a exists in the traversed array, if it does, then return the index of that element and the current element. We can use an unordered map to pair the traversed element with it's index.
 #include <iostream>
 #include <vector>
 #include <bits/stdc++.h>
