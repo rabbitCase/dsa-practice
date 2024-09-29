@@ -1,5 +1,5 @@
 //Various operations on a doubly linked list
-//implements double pointers
+//uses double pointers and is menu-driven to perform like a doubly linked list editor
 #include <stdio.h>
 #include <stdlib.h>
 struct dnode{
