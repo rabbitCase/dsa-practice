@@ -1,3 +1,5 @@
+//Various operations on a doubly linked list
+//implements double pointers
 #include <stdio.h>
 #include <stdlib.h>
 struct dnode{
@@ -9,7 +11,7 @@ struct dnode{
 int checkEmpty(struct dnode *head){
     return head==NULL;
 }
-void checkLinks(struct dnode *head){
+void checkLinks(struct dnode *head){//useful function to check if the left and right links of nodes are correct
     int ele;
     printf("\nEnter the element: ");
     scanf("%d",&ele);
@@ -220,7 +222,7 @@ void insertBefore(struct dnode **head){
     cur->llink->rlink=temp;
     cur->llink=temp;
 }
-void reverseList(struct dnode **head){
+void reverseList(struct dnode **head){//reverse the list by reversing left and right links and also updating the head pointer
     struct dnode *cur=*head,*temp=NULL;
     int count=0;
     if(checkEmpty(*head)){
