@@ -229,7 +229,10 @@ void reverseList(struct dnode **head){//reverse the list by switching left and r
         printf("\nList is empty.");
         return;
     }
-   
+    if((*head)->rlink==NULL){
+        printf("\nOnly one element in the list.");
+        return;
+    }
     while(cur!=NULL){
     temp=cur->llink;
     cur->llink=cur->rlink;//llink becomes rlink
