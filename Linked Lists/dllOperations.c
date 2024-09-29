@@ -239,7 +239,7 @@ void reverseList(struct dnode **head){//reverse the list by switching left and r
     cur->rlink=temp;
     cur=cur->llink;//cur moves to llink because llink is now actually rlink
     }
-    (*head)=temp->llink;
+    (*head)=temp->llink;//temp=cur->llink before cur->llink was updated to cur->rlink, hence temp->llink->llink=temp->llink->(updated (previous node->rlink))=*head
 }
 int main()
 {
