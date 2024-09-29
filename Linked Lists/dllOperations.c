@@ -222,7 +222,7 @@ void insertBefore(struct dnode **head){
     cur->llink->rlink=temp;
     cur->llink=temp;
 }
-void reverseList(struct dnode **head){//reverse the list by reversing left and right links and also updating the head pointer
+void reverseList(struct dnode **head){//reverse the list by switching left and right links and also updating the head pointer
     struct dnode *cur=*head,*temp=NULL;
     int count=0;
     if(checkEmpty(*head)){
@@ -232,9 +232,9 @@ void reverseList(struct dnode **head){//reverse the list by reversing left and r
    
     while(cur!=NULL){
     temp=cur->llink;
-    cur->llink=cur->rlink;
+    cur->llink=cur->rlink;//llink becomes rlink
     cur->rlink=temp;
-    cur=cur->llink;
+    cur=cur->llink;//cur moves to llink because llink is now actually rlink
     }
     (*head)=temp->llink;
 }
