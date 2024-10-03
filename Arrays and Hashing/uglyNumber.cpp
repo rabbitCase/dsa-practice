@@ -1,3 +1,4 @@
+//Leetcode Easy 263: An ugly number is a positive integer whose prime factors are limited to 2, 3, and 5
 class Solution {
 public:
     bool isUgly(int n) {
