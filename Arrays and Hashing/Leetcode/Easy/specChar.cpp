@@ -1,3 +1,5 @@
+//Leetcode Easy 3120: Count the number of special characters in the string
+/*Concept: A special character is character that appears in both uppercase and lowercase in the same string*/
 #include <iostream>
 #include <bits/stdc++.h>
 using namespace std;
@@ -14,10 +16,11 @@ public:
         }
         for(int i=0;i<word.length();i++){
             if(isupper(word[i])){
-                if(mpp.count(tolower(word[i])) && !s.count(word[i])){
+                if(mpp.count(tolower(word[i])) && !s.count(word[i])){//If we have already checked for the letter previously, then it will be present in s and 
+                                                                      //therefore in that case we don't increment count
                     count++;
                 }
-                s[word[i]]=i;
+                s[word[i]]=i;//first check if the letter has been checked for and only then add the checked letter to s
             }
         }
         return count;
