@@ -1,5 +1,5 @@
 //Leetcode Easy 3120: Count the number of special characters in the string
-/*Concept: A special character is character that appears in both uppercase and lowercase in the same string*/
+/*Concept: A special character is character that appears in both uppercase and lowercase in the same string. Store the lowercase letters in an unordered map first. Then traverse through the string again. If we encounter an uppercase letter, check if it's lowercase is present in the array, if so, increment count */
 #include <iostream>
 #include <bits/stdc++.h>
 using namespace std;
