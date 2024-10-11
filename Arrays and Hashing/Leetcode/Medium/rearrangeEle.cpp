@@ -3,7 +3,7 @@
 //1) Vector should begin with a positive integer
 //2) Positive  and negative integer should alternate
 //3) The order of every interger with the same sign should be same as they were in the original vector
-/*Concept: Create two vectors, s1 and s2, one which stores the positive integers and another one for the negative integers, as order is preserved, simply append one element one positive integer and then one negative integer to a new vector s3 until s1 and s2 are empty*/
+/*Concept: Create two vectors, s1 and s2, one which stores the positive integers and another one for the negative integers, as order is preserved, simply append one positive integer and then one negative integer to a new vector s3 recursively until s1 and s2 are empty*/
 #include <stdio.h>
 #include <bits/stdc++.h>
 using namespace std;
