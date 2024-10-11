@@ -1,4 +1,5 @@
 //Leetcode Medium 189: Rotate Array by k places
+//Example : array=[1,2,3,4,5], rotating by 1 place we get, [5,1,2,3,4], rotating this by two places we get, [3,4,5,1,2]
 #include <iostream>
 using namespace std;
 int main(){
