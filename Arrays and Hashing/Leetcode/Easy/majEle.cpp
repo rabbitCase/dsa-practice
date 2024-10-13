@@ -1,4 +1,5 @@
 //Leetcode Easy 169 : Find the majority element in a given array. Majority element is the element which appears more than n/2 times where n is the size of the array.
+
 /*Concept: We can always use a hash map to store the frequency of every element in the array and then compare the frequency with n/2 to find the majority element, but there is a simple concept than can also be used: when we sort the array, the majority element should be present in the middle of the array, as the element occupies more than half the size of the array. So, we can simply sort our array (a vector in this case) and return the element at index n/2*/
 #include <iostream>
 #include <bits/stdc++.h>
