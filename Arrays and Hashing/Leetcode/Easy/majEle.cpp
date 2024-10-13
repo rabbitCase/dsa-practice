@@ -33,6 +33,6 @@ public:
 //Test 
 int main(){
     Solution sol;
-    vector <int> x={2,2,1,1,1,2,2};
+    vector <int> x={2,2,1,1,1,2,2};//Majority element is 2 as it appears more than 3 (7/2) times
     cout<< sol.majorityElement(x);
 }
