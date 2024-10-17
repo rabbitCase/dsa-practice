@@ -198,7 +198,7 @@ void insertAndMaintainOrder(struct node **head){
 int main()
 {
     int x;
-    printf("LINKED LIST OPERATIONS\n0: View your list\n1: Add nodes to your list\n2: Delete a node\n3: Insert an node after a specified node\n4: Insert an node before a specified node\n5: Reverse your list\n6: Sort your list\n7: Delete every alternate node of your list\n8: Insert a node while maintaining ascending order\n9: EXIT\n");
+    printf("LINKED LIST OPERATIONS\n0: View your list\n1: Add nodes to your list\n2: Delete a node\n3: Insert a node after a specified node\n4: Insert a node before a specified node\n5: Reverse your list\n6: Sort your list\n7: Delete every alternate node of your list\n8: Insert a node while maintaining ascending order\n9: EXIT\n");
     do{
         printf("Enter your choice: ");
         scanf("%d",&x);
