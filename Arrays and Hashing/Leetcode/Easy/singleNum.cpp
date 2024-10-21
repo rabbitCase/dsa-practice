@@ -1,4 +1,5 @@
-//Leetcode Easy 136
+//Leetcode Easy 136: Find the number which appears once in the array
+/*The Question asks or linear time complexity and constant space. A common approach of using hash map (which is used here) solves the former but fails at the latter. The concept of bit manipulation is to be studied for fulfilling the problem conditions. The problem may be updated in the future when I have a better grasp of bit manipulation*/
 #include <iostream>
 #include <bits/stdc++.h>
 using namespace std;
