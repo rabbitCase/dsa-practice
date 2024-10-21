@@ -12,7 +12,7 @@ public:
         }
         for(auto x:mpp){
             if(x.second==1){
-            ans=x.second;
+            ans=x.first;
             break;
             }
         }
