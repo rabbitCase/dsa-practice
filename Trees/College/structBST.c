@@ -2,11 +2,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 typedef struct node {
-
     int data;
-
     struct node* right;
-
     struct node* left;
 } node;
 
@@ -27,7 +24,7 @@ node* insert(node *root,int n){
     return root;
 }
 
-void traverse(node* root) {
+void traverse(node* root) { //inorder traversal
     if (root==NULL)
         return;
     traverse(root -> left);
@@ -41,6 +38,5 @@ int main(){
         root=insert(root,i);
     }
     traverse(root);
-
     return 0;
 }
