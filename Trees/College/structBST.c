@@ -1,3 +1,4 @@
+//Basic structure of a Binary Search Tree
 #include <stdio.h>
 #include <stdlib.h>
 typedef struct node {
