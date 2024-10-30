@@ -67,7 +67,7 @@ int main(){
     printf("Leaf nodes: %d",traverse(root));
     return 0;
 }
-// //Basic structure of a Binary Search Tree
+//Previous code
 // #include <stdio.h>
 // #include <stdlib.h>
 // typedef struct node {
