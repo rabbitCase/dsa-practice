@@ -70,42 +70,40 @@ int main(){
 //Previous code
 // #include <stdio.h>
 // #include <stdlib.h>
-// typedef struct node {
+// struct node{
 //     int data;
-//     struct node* right;
-//     struct node* left;
-// } node;
+//     struct node *left;
+//     struct node *right;
+// } *root=((void*)0);
 
-// node* insert(node *root,int n){
-//     node *temp=(node*)malloc(sizeof(node));
+// void inorder(struct node *root){
 //     if(root==NULL){
-//         temp->data=n;
-//         temp->right=NULL;
-//         temp->left=NULL;
+//         return;
+//     }
+//     inorder(root->left);
+//     printf("%d ",root->data);
+//     inorder(root->right);
+// }
+
+
+// struct node* insert(struct node *root,int ele){
+//     struct node* temp=(struct node*)malloc(sizeof(struct node));
+//     if(root==NULL){
+//         temp->data=ele;
+//         temp->left=temp->right=NULL;
 //         return temp;
 //     }
-//     if(n < (root)->data){
-//         root->left=insert(root->left,n);
+//     if(ele<root->data){
+//         root->left=insert(root->left,ele);
 //     }
 //     else{
-//         root->right=insert(root->right,n);
+//         root->right=insert(root->right,ele);
 //     }
 //     return root;
 // }
-
-// void traverse(node* root) { //inorder traversal
-//     if (root==NULL)
-//         return;
-//     traverse(root -> left);
-//     printf("%d ", root -> data);
-//     traverse(root -> right);
-// }
-
 // int main(){
-//     node *root=NULL;
-//     for(int i=0;i<10;i++){
+//     for(int i=1;i<10;i++){
 //         root=insert(root,i);
 //     }
-//     traverse(root);
-//     return 0;
+//     inorder(root);
 // }
