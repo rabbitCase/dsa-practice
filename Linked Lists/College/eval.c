@@ -1,4 +1,4 @@
-//DS Lab End sem
+//A question from  Data Structures End semester exam
 //create a new list containing even and odd number from the original list in sorted order (Q3)
 #include <stdio.h>
 #include <stdlib.h>
