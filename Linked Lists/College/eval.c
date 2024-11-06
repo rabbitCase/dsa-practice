@@ -66,8 +66,8 @@ void create(struct node **head3,int element){//insert element function for the s
 }
 
 void sort(struct dnode **head, struct node **head3){
-    int curmin[100],newmin[100];
-    int flag=0,i=0,j=0,n1=0,n2=0;
+    int curmin[100],newmin[100];//array to store even and odd numbers
+    int i=0,j=0,n1=0,n2=0;
     struct dnode *cur=*head;
     while(cur){
         if(cur->data % 2==0){
@@ -77,7 +77,7 @@ void sort(struct dnode **head, struct node **head3){
        
         cur=cur->rlink;
     }
-    cur=*head;
+    cur=*head;//reset cur
     while(cur){
         if(cur->data % 2!=0){
             newmin[j++]=cur->data;
@@ -85,7 +85,7 @@ void sort(struct dnode **head, struct node **head3){
         }
         cur=cur->rlink;
     }
-    for(int i=0;i<n1-1;i++){
+    for(int i=0;i<n1-1;i++){//bubble sort even array 
         for(int j=1;j<n1-i;j++){
             if(curmin[j]<curmin[j-1]){
                 int temp=curmin[j];
@@ -94,7 +94,7 @@ void sort(struct dnode **head, struct node **head3){
             }
         }
     }
-    for(int i=0;i<n2-1;i++){
+    for(int i=0;i<n2-1;i++){//bubble sort odd array
         for(int j=1;j<n2-i;j++){
             if(newmin[j]<newmin[j-1]){
                 int temp=newmin[j];
@@ -103,16 +103,16 @@ void sort(struct dnode **head, struct node **head3){
             }
         }
     }
-    for(int i=0;i<n1;i++){
+    for(int i=0;i<n1;i++){//insert even numbers into the new list
             create(head3,curmin[i]);
     }
-    for(int i=0;i<n2;i++){
+    for(int i=0;i<n2;i++){//insert odd numbers into the new list
             create(head3,newmin[i]);
     }
 }
 
 int main(){
-    insertElement(&head,3);
+    insertElement(&head,3);//insert elements in random order
     insertElement(&head,4);
     insertElement(&head,1);
     insertElement(&head,2);
