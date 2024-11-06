@@ -1,5 +1,5 @@
 //A question from  Data Structures End semester exam
-//create a new list containing even and odd number from the original list in sorted order (Q3)
+//Create a doubly Linked list
 #include <stdio.h>
 #include <stdlib.h>
 
