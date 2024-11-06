@@ -1,7 +1,7 @@
 //A question from  Data Structures End semester exam
 //Create a doubly Linked list
 //Display it
-
+//Create a second list containing even numbers first and then odd numbers from the original list in sorted order
 #include <stdio.h>
 #include <stdlib.h>
 
