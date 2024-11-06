@@ -11,13 +11,13 @@ struct dnode{
     struct dnode *rlink;//right link
 }*head=NULL;
 
-struct node{
+struct node{//second list
     int data;
     struct node *llink;
     struct node *rlink;
 }*head3=NULL;
 
-void display(struct node *head3){
+void display(struct node *head3){//display function for the second list
     if(!head3){
         printf("\nList is empty.");
         return;
@@ -31,7 +31,7 @@ void display(struct node *head3){
     printf("NULL\n");
 }
 
-void insertElement(struct dnode **head,int element){//insert element at the rear end of list
+void insertElement(struct dnode **head,int element){//insert element function for the first list
     struct dnode *temp=(struct dnode*)malloc(sizeof(struct dnode));
     temp->data=element;
     temp->llink=NULL;
@@ -44,11 +44,11 @@ void insertElement(struct dnode **head,int element){//insert element at the rear
     while(cur->rlink!=NULL){
         cur=cur->rlink;//get the last node
     }
-    cur->rlink=temp;//connect temp to the list
-    temp->llink=cur;//doubly link the new node
+    cur->rlink=temp;
+    temp->llink=cur;
 }
 
-void create(struct node **head3,int element){
+void create(struct node **head3,int element){//insert element function for the second list
     struct node *temp=(struct node*)malloc(sizeof(struct node));
     temp->data=element;
     temp->llink=NULL;
