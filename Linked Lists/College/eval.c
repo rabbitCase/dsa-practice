@@ -1,5 +1,7 @@
 //A question from  Data Structures End semester exam
 //Create a doubly Linked list
+//Display it
+
 #include <stdio.h>
 #include <stdlib.h>
 
