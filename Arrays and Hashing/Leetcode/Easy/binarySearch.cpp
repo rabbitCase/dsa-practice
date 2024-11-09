@@ -1,4 +1,4 @@
-//Leetcode Easy 704: Perform Binary Search on a sorted array
+//Leetcode Easy 704: Perform Binary Search on a sorted (ascending) array
 #include <iostream>
 #include <bits/stdc++.h>
 using namespace std;
