@@ -20,7 +20,7 @@ public:
             return mid;
 
         }
-        return -1;
+        return -1;//default if element not found in array
     }
 };
 
