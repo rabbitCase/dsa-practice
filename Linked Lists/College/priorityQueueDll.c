@@ -48,7 +48,7 @@ struct node* enqueue(struct node *head){
     head->llink=temp;
     return head;
 }
-int findmin(struct node *head){
+int findmin(struct node *head){//function to find the element with the minimum priority to dequeue first
     int min=999;
     struct node* cur=head;
     do{
@@ -57,6 +57,7 @@ int findmin(struct node *head){
         }
         cur=cur->rlink;
     }while(cur!=head);
+    
     return min;
 }
 
