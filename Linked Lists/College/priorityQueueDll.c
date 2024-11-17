@@ -63,12 +63,12 @@ int findmin(struct node *head){//function to find the element with the minimum p
 }
 
 struct node* dequeue(struct node* head){
-    if(head->priority==findmin(head)){
+    if(head->priority==findmin(head)){//when the head itself has first dequeue priority
         struct node *cur=head;
         do{
             cur=cur->rlink;
         }while(cur->rlink!=head);
-        cur->rlink=cur->rlink->rlink;
+        cur->rlink=cur->rlink->rlink;//unlink the last node and connect it to the new head
         struct node *temp=head->llink;
         head=head->rlink;
         head->llink=temp;
@@ -86,7 +86,7 @@ struct node* dequeue(struct node* head){
     }while(cur!=head);
     return head;
 }
-
+//sample main 
 int main(){
     printf("Enqueueing 5 elements:\n");
     head=enqueue(head);
