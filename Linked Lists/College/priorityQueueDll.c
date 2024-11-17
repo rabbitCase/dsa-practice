@@ -16,7 +16,8 @@ void display(struct node *head){
     do{
         printf("(%d,%d)->",cur->data,cur->priority);
         cur=cur->rlink;
-    }while(cur!=head);
+    }while(cur!=head);//Using a do-while loop for a circular list as condition as a simple while loop (i.e while(cur!=head)) would never start since cur is 
+                      //initialised to head
     printf("(%d, %d)[HEAD]",cur->data,cur->priority);
 }
 
