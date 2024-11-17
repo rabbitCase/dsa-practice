@@ -1,4 +1,5 @@
-//priority queue using circular double linked list
+//Priority queue using circular double linked list
+//This priority queue enqueues on a first come basis but dequeues on the basis of the priority assigned to the element
 #include <stdio.h>
 #include <stdlib.h>
 struct node{
