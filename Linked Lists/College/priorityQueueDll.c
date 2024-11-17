@@ -4,7 +4,7 @@
 #include <stdlib.h>
 struct node{
     int data;
-    int priority;
+    int priority;//include a data field to store priority
     struct node *llink;
     struct node *rlink;
 }*head=NULL;
