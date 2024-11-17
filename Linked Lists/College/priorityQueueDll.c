@@ -1,4 +1,4 @@
-//pririty queue using circular double linked list
+//priority queue using circular double linked list
 #include <stdio.h>
 #include <stdlib.h>
 struct node{
