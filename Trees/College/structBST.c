@@ -3,11 +3,8 @@
 #include <stdlib.h>
 
 typedef struct node {
-
     int data;
-
     struct node* right;
-
     struct node* left;
 } node;
 
@@ -50,10 +47,10 @@ int count=0;
 int traverse(node* root) {//traverse inorder and count the no of leaf nodes
     if (root==NULL)
         return 0;
-    traverse(root -> left);
+    traverse(root->left);
     if(root->left==NULL && root->right==NULL)
         count++;
-    traverse(root -> right);
+    traverse(root->right);
     return count;
 }
 int main(){
