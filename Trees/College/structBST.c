@@ -58,7 +58,7 @@ int traverse(node* root) {//traverse inorder and count the no of leaf nodes
 }
 int main(){
     node *root=NULL;
-    for(int i=0;i<10;i++){//
+    for(int i=0;i<10;i++){//elements are being added in ascending order so the tree is basically a linked list i.e no of leaf nodes=1
         insert(&root,i);
     }
     searchBST(root,5);
