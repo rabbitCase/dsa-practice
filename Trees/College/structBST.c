@@ -47,20 +47,18 @@ node* searchBST(node *root,int n){
 
 }
 int count=0;
-int traverse(node* root) {
+int traverse(node* root) {//traverse inorder and count the no of leaf nodes
     if (root==NULL)
         return 0;
     traverse(root -> left);
     if(root->left==NULL && root->right==NULL)
         count++;
     traverse(root -> right);
-    if(root->left==NULL && root->right==NULL)
-        count++;
     return count;
 }
 int main(){
     node *root=NULL;
-    for(int i=0;i<10;i++){
+    for(int i=0;i<10;i++){//
         insert(&root,i);
     }
     searchBST(root,5);
