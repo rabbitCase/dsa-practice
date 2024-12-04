@@ -1,7 +1,7 @@
 //Leetcode Easy 21: Merge Sorted List
 //Given two sorted lists, return a sorted list merging the two.
 //Example: list1: 1->2->3->NULL, list2: 2->3->4->NULL, merged list: 1->2->2->3->3->4->NULL
-//Inefficient Solution: connect the tail of list1 to head of list2 and then bubble sort the new joined list
+//Inefficient solution: connect the tail of list1 to head of list2 and then bubble sort the new joined list
 /**
  * Definition for singly-linked list.
  * struct ListNode {
@@ -49,7 +49,7 @@ public:
         return list1;
     }
 };
-//Test main
+//test main
 int main(){
     Solution sol;
     ListNode* list1 = new ListNode(1); list1->next = new ListNode(3); ListNode* list2 = new ListNode(4); list2->next = new ListNode(2);
