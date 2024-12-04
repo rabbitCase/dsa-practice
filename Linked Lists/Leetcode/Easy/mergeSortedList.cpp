@@ -1,5 +1,4 @@
 //Leetcode Easy 21
-//weird solution
 #include <iostream>
 struct ListNode {
     int val;
