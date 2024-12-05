@@ -1,4 +1,5 @@
 //Leetcode Medium 74: Given a 2d matrix with elements in each row in non-decreasing order, return true if target is present in the matrix
+//For an O(log(m*n)) solution, we are basically performing binary search on a 2d matrix
 #include <iostream>
 #include <bits/stdc++.h>
 using namespace std;
