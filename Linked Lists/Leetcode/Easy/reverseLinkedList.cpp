@@ -1,4 +1,5 @@
-//Leetcode Easy 206
+//Leetcode Easy 206: Reverse a linked list
+//Iterative approach: We have three pointers prev, cur and front. cur points to the current node in traversal, prev to the previous and front to the succeeding node. We change the link of cur to make it point towards prev. To update the cur so as to move to the next node, we make cur=front and repeat cur->next=prev till we reach the end of the list
 #include <iostream>
 struct ListNode {
     int val;
