@@ -20,7 +20,7 @@ public:
         root->left=root->right;
         root->right=temp;
 
-        invertTree(root->left);
+        invertTree(root->left);//The swapped node becomes the  new root
         invertTree(root->right);
         return root;
     }
