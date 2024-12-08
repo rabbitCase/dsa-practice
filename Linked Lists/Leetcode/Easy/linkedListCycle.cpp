@@ -13,7 +13,7 @@ struct ListNode {
 class Solution {
 public:
     bool hasCycle(ListNode *head) {
-        unordered_map <ListNode*,int> mpp;
+        unordered_map <ListNode*,int> mpp;//pointer to struct ListNode->int
         ListNode *cur=head;
         while(cur!=NULL){
             if(mpp[cur->next]>1 ){
