@@ -1,4 +1,5 @@
-//Leetcode Medium 237/**
+//Leetcode Medium 237: Delete a given linked list node
+//Condition: We do not have access to the head of the list. The function takes the node to be deleted as a parameter.
 #include <iostream>
 struct ListNode {
     int val;
