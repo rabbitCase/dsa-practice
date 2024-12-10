@@ -1,4 +1,6 @@
-//Leetcode Medium 235
+//Leetcode Medium 235: Find the lowest common ancestor of two given nodes in a Binary Search Tree
+//The question specifies that each node can also act as it's decendant. 
+//Note that the lowest ancestor means lowest in depth from the root and not lowest in the actual value of the node
 #include <iostream>
 struct TreeNode {
     int val;
