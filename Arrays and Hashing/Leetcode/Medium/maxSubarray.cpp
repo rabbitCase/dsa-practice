@@ -11,8 +11,8 @@ public:
         int n=nums.size();
         int sum=0,best=INT_MIN;
         for(int i=0;i<n;i++){
-            sum=max(nums[i],(sum+nums[i]));//sum only updates if (sum+nums[i]) > nums[i], thereby ensuring sum only updates if the added element does not decrease 
-            best=max(best,sum);            //it's value
+            sum=max(nums[i],(sum+nums[i]));//sum only updates if (sum+nums[i]) > nums[i], thereby ensuring sum only updates if the added element does not  
+            best=max(best,sum);            //decrease it's value
         }
         return best;
     }
