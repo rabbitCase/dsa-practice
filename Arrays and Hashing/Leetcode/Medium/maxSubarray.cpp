@@ -17,3 +17,19 @@ public:
         return best;
     }
 };
+//Better way to understand the algorithm
+// class Solution {
+// public:
+//     int maxSubArray(vector<int>& nums) {
+//         int n=nums.size();
+//         int sum=0,best=INT_MIN;
+//         for(int i=0;i<n;i++){
+//             sum+=nums[i];
+//             if(sum<nums[i]){
+//                 sum=nums[i];
+//             }
+//             best=max(sum,best);
+//         }
+//         return best;
+//     }
+// };
