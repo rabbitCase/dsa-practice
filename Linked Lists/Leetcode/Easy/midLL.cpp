@@ -1,4 +1,4 @@
-//Leetcode Easy 876
+//Leetcode Easy 876: Find the middle node of a given linked list. Return the  second middle element if there are two of them (even no of elements)
 #include <iostream>
 using namespace std;
 
