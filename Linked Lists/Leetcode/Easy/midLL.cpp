@@ -1,4 +1,6 @@
 //Leetcode Easy 876: Find the middle node of a given linked list. Return the  second middle element if there are two of them (even no of elements)
+//There is always the brute force method where you traverse through the array, count it's size, traverse again till you reach the size/2 and return that element. But obviusly this is very inefficient and has vary bad space complexity.
+//The concept of fast and slow pointers come to the rescue. Both fast and slow start at head, fast pointer moves two steps while the slow pointer moves one step, therefore, by the time the fast pointer reaches the end, the slow pointer will be at the middle of the list
 #include <iostream>
 using namespace std;
 
