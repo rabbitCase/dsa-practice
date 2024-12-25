@@ -1,5 +1,7 @@
 //Leetcode Easy 704: Perform Binary Search on a sorted (ascending) array
 //Time complexity of a binary search is O(log2n) or in other words, the data size to search is being divided by two for every search iteration
+//Performing a binary search is simple, although the primary condition we require is that the data should be sorted in ascending or descending order
+//
 #include <iostream>
 #include <bits/stdc++.h>
 using namespace std;
