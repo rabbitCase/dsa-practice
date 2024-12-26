@@ -1,4 +1,4 @@
-//Very Basic Array editor combining numberMag, bubbleSort, numInsert and numDelete//
+//Very Basic Array editor to sort an array, compare magnitude of array elements, perform bubble sort and insert/delete arrary elemets
 #include <stdio.h>
 #include <stdlib.h>
 
