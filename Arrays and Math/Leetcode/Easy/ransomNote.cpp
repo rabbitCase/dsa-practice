@@ -1,4 +1,6 @@
-//Leetcode Easy 383
+//Leetcode Easy 383: Ransom Note
+//Given two strings ransomNote and magazine, determine wether ransomNote can be contructed using the characters in magazine, each magazine character can only be used once
+
 #include <iostream>
 #include <bits/stdc++.h>
 class Solution {
