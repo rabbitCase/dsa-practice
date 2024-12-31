@@ -22,6 +22,7 @@ public:
         return true;
     }
 };
+//Method 2 (significantly faster): Create a single map for the frequency of the character of magazine. Traverse through ransomNote and decrease frquency in the mao for every character in ransomNote. If the frequency for a particular character in ransomNote is <=0 in the map, then contruction is not possible.
 class Solution {
 public:
     bool canConstruct(string ransomNote, string magazine) {
