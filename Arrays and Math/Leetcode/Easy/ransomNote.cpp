@@ -1,6 +1,6 @@
 //Leetcode Easy 383: Ransom Note
 //Given two strings ransomNote and magazine, determine wether ransomNote can be contructed using the characters in magazine, each magazine character can only be used once
-//Method 1
+//Method 1: create two unordered maps to store the frequency of characters in magazine and ransomNote and then compare the frequency parameter of both the strings. If a character in ransomNote has a higher frequency as compared to magazine, then construction is not possible
 #include <iostream>
 #include <bits/stdc++.h>
 class Solution {
