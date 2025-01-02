@@ -1,4 +1,5 @@
 //Basic Structure of a BST: updated with double pointers and a search method
+//BST or binary search tree is a tree where each child has a degree two. Also, compared to the parent node, the left child is smaller and the right child is greater
 #include <stdio.h>
 #include <stdlib.h>
 
