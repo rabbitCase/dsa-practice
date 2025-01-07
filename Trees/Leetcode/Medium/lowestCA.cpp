@@ -19,7 +19,7 @@ public:
         TreeNode *cur=root;
         if(cur->val > p->val && cur->val > q->val)//we need to go left
         return lowestCommonAncestor(cur->left,p,q);
-        if(cur->val < p->val && cur->val < q->val)
+        if(cur->val < p->val && cur->val < q->val)//we need to go right
         return lowestCommonAncestor(cur->right,p,q);
         return cur;
     }
