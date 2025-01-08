@@ -1,4 +1,5 @@
-//Leetcode Easy 278
+//Leetcode Easy 278: Find the first bad version
+//We have an array of size size n ([1,2,3...n]), where each number represents a version of a software. Each version after a particular version is 'bad'
 // The API isBadVersion is defined for you.
 // bool isBadVersion(int version);
 
