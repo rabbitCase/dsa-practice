@@ -21,7 +21,7 @@ public:
     }    
 };
 
-//This was the previous solution. It takes O((n*(n-1)^2)) time complexity which is why I got TLE for 8/63 test cases
+//This was the previous solution. It takes O((n*(n-1)^2)) time complexity which is why a TLE is encountered for 8/63 test cases
 /*Concept: For every element, traverse through the array and calculate respective area with every succeeding element. This can be done through two for loops. In the area calculation, the height will be taken as the smaller of the two elements being compared (water can only be filled in the container upto the lowest height of the two lines) and length will be the distance between the two elements which will be kept track of by the count variable.*/
 // class Solution {
 // public:
