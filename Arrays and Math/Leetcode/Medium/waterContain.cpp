@@ -3,7 +3,7 @@
 /*Example height vector is: [1,8,6,2,5,4,8,3,7], here, maximum area for water to be stored will be between 8 (height[1]) and 7 (height[8]) because the area we will get if we store water between these vertical lines is height*length that is 7*7=49*/
 
 //Updated code with two pointer method
-/*Concept: We have two pointers, left and right where initially left points to the begininng of the array and right is at the end of the array. In this method, length between two container edged will simply be (right-left). Now, we find the area by multiplying length by the min(left,right), after the operation, if the value left points to is less than that pointed by right, then we increment left to point to the next element because of the possibilty of finding larger area if the next element is larger, otherwise we move right so that it points to one element prior to it */
+/*Concept: We have two pointers, left and right where initially left points to the begininng of the array and right is at the end of the array. In this method, length between two container edges will simply be (right-left). Now, we find the area by multiplying length by the min(left,right), after the operation, if the value left points to is less than that pointed by right, then we increment left to point to the next element because of the possibilty of finding larger area if the next element is larger, otherwise we move right so that it points to one element prior to it */
 
 #include <iostream>
 #include <bits/stdc++.h>
