@@ -1,4 +1,4 @@
-/*Leetcode Medium 11: You are given an integer array height of length n. There are n vertical lines drawn such that the two endpoints of the ith line are (i, 0) and (i, height[i]). Find two lines that together with the x-axis form a container, such that the container contains the most water.*/
+/*Leetcode Medium 11: You are given an integer array height of size n. There are n vertical lines drawn such that the two endpoints of the ith line are (i, 0) and (i, height[i]). Find two lines that together with the x-axis form a container, such that the container contains the most water.*/
 
 /*Example height vector is: [1,8,6,2,5,4,8,3,7], here, maximum area for water to be stored will be between 8 (height[1]) and 7 (height[8]) because the area we will get if we store water between these vertical lines is height*length that is 7*7=49*/
 
