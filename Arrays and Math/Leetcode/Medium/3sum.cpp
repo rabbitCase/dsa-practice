@@ -1,4 +1,5 @@
-//Leetcode Medium 15
+//Leetcode Medium 15: 3 sum
+//find all triplets in an array which add upto 0
 #include <iostream>
 #include <bits/stdc++.h>
 using namespace std;
