@@ -21,8 +21,8 @@ public:
                 vec.push_back({nums[i],nums[j],nums[k]});
                 j++;
                 k--;
-                while(j<k && nums[j]==nums[j-1]){
-                    j++;
+                while(j<k && nums[j]==nums[j-1]){//for the current fixed index, we do not include the left pointer if the element it is pointing to was the same    
+                    j++;                         //after moving inward
                 }
                 while(j<k && nums[k]==nums[k+1]){
                     k--;
