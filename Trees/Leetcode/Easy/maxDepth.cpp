@@ -1,3 +1,5 @@
+//Leetcode Easy 104: Return maximum depth of a Binary tree
+//We use recursion to traverse the tree with two integer pointers left and right. We calculate the max depth of each subtree + 1, finally, after the function stack is fully executed, the max(left,right) gives us the max depth.
 #include <iostream>
 
 struct TreeNode {
