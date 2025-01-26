@@ -1,4 +1,4 @@
-//Leetcode Easy 409
+//Leetcode Easy 409: find the length of the longest palindrome that can be formed with the given string
 #include <iostream>
 #include <bits/stdc++.h>
 using namespace std;
