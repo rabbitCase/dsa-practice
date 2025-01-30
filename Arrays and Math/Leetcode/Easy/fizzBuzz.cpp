@@ -5,7 +5,7 @@
 // answer[i] == "Buzz" if i is divisible by 5.
 // answer[i] == i (as a string) if none of the above conditions are true.
 
-//Simple if else statements. Self explanatory
+//Simple if else statements. 
 class Solution {
 public:
     vector<string> fizzBuzz(int n) {
