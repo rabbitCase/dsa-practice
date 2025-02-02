@@ -16,7 +16,7 @@ struct TreeNode {
 class Solution {
 public: 
     bool isValidBST(TreeNode* root){
-        return isValid(root,LONG_MIN, LONG_MAX);
+        return isValid(root,LONG_MIN, LONG_MAX);//Used LONG_MIN/MAX instead of INT due to the nature of some testcases
     }
 private:
     bool isValid(TreeNode* root, long min, long max) {
@@ -26,6 +26,6 @@ private:
         if(root->val >= max || root->val <= min){
             return false;
         }
-        return isValid(root->left, min, root->val) && isValid(root->right, root->val, max);
+        return isValid(root->left, min, root->val) && isValid(root->right, root->val, max); //for root->left, max value is now changed and for root->right, the min value is changed, this change happens for every recursive call
     }
 };
