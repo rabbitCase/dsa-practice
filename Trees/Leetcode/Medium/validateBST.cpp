@@ -20,8 +20,8 @@ public:
     }
 private:
     bool isValid(TreeNode* root, long min, long max) {
-        if(!root){
-            return true;
+        if(!root){//Encountered a null node
+            return true;//A null node is a valid BST
         }
         if(root->val >= max || root->val <= min){
             return false;
