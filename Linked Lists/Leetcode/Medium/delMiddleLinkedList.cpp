@@ -1,4 +1,5 @@
-//Leetcode Medium 2095
+//Leetcode Medium 2095: Delete the middle node of the linked list
+//Concept: We take a pretty straightforward approach, first, we traverse the entire list, and implement a counter to count till we reach the end to get the size of the list. We then reset the pointer to point to the head and traverse again till one node behind the middle node ((count/2 - 1)th node). We then change the link of this node to the link of the node in front of it (current->next = current->next->next), effectively, deleting the node in front of it
 #include<iostream>
 
 struct ListNode {
