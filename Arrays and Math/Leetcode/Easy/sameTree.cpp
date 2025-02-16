@@ -1,3 +1,7 @@
+//Leetcode Easy 100: Same tree
+//We have to check whether the the given heads of two trees and equal in structure and values.
+//Concept: We check the current value of p and q, if they are equal, we recursively check for equality for the left and right values of both p and q
+//Note: The trees are equal if both roots are null
 #include <iostream>
 using namespace std;
 struct TreeNode {
