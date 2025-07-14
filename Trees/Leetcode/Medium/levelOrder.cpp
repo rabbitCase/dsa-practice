@@ -1,3 +1,5 @@
+//Leetcode Medium 102
+//push the root to the queue first, then add the children to the queue if they exist, then iterate through the queue and check if subsequent children exist for every node. Finally pop the front of the queue after checking. Do this while the queue is not empty
 #include <iostream>
 #include <bits/stdc++.h>
 using namespace std;
