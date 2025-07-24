@@ -1,3 +1,5 @@
+//Leetcode Medium 134
+//If we cannot travel from i to (i + 1)th station, all stations before i become invalid, So we move the possible valid index one to the right. If we find an index from which travel is possible till the end of gas[] then that index is the valid station as we are guaranteed that a unique solution exists, so we don't have to check if we can loop back to that valid index or not.  
 #include <iostream>
 #include <vector>
 using namespace std;
