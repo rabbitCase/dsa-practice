@@ -1,3 +1,5 @@
+//Leetcode Easy 26
+//Traverse the array and keep track of the first duplicate of an element(using replace pointer). This duplicate will be replaced by the first non duplicate encountered while traversing the array. Then increment replace so that other non duplicates can be switched. After full traversal, all non duplicates will be together and the rest of the array will be filled with duplicates.
 #include <iostream>
 #include <vector>
 using namespace std;
