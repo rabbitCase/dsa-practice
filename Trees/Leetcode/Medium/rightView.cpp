@@ -1,4 +1,5 @@
 //Leetcode Medium 199
+//After completing the level order traversal, we have a 2d array representing all elements at every level eg [[0],[1,2], [3,4], [5,6]]. We can just use the rightmost element for each level and push it to the final result vector to get all the nodes towards the right of the tree.
 #include <iostream>
 #include <bits/stdc++.h>
 using namespace std;
