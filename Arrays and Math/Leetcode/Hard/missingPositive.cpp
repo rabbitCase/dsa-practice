@@ -1,3 +1,5 @@
+//Leetcode Hard 41
+//An array of size n can hold positive integers from [1,n], therefore if some other number replaces one of these, then the replaced number (or the missing number) must be between [1,n]. We do one pass to fill the hash table and another one to check the first unfilled position and return it. We do not consider elements < 1 or elements > n
 #include <iostream>
 #include <vector>
 using namespace std;
