@@ -1,4 +1,5 @@
 //Leetcode Medium 200
+//Initialize a matrix to represent which indices have been visited. Then perform bfs on every unvisited land. Bfs makes sure all neighbouring lands are marked as visited. After successfull execution of bfs, we have reached all neighbouring lands and marked all of them as visited, hence identifying an island. Repeat this procedure for every unvisited land and increment a counter every time bfs executes
 #include <iostream>
 #include <bits/stdc++.h>
 #include <vector>
