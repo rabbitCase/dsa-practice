@@ -1,4 +1,5 @@
 //Leetcode Medium 994
+//As multiple oranges could be rotted at the beginning, we push all rotted oranges into a queue and perform bfs on each of them, adding newly rotted oranges to the end of the queue. For every rotted orange in the queue, we check for fresh oranges 4 directionally and increment a counter (no. of minutes) if adjacent fresh oranges exists. Repeat until queue is empty
 #include <iostream>
 #include <bits/stdc++.h>
 #include <vector>
