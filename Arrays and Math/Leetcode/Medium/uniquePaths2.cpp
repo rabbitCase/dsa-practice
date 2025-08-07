@@ -1,3 +1,5 @@
+//Leetcode Medium 63
+//Recursive traversal by incrementing row and column index. Use memo[i][j] to keep track of all unique paths upto grid[i][j] and to speed up recursive calls. A unique path exists when we reach the end of the grid (m - 1, n - 1) and we return 1. Return 0 for out of bounds cases and obstacles in the grid.
 #include <iostream>
 #include <vector>
 using namespace std;
