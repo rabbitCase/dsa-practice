@@ -1,3 +1,8 @@
+//Leetcode Medium 198
+//We can either rob the current house in which case we add the amount  we get from the current (nth) house and then solve the same problem recursively for the (n - 2)th house as adjacent houses cannot be robbed. If we choose to not rob the current house, we don't the add the amount from the current house and instead solve the same problem recursively for the adjacent (n - 1)th house.
+//return the max value we get by deciding to rob or not rob every house
+
+//Using a dfs approach with a memo table exceeds memory limit on leetcode, hence we use a bottom up dp array to compute the max value we get by either robbing the current house or robbing the next valid house. Since only the last two indices of the array are being used, space can further be optimised by only using two variables instead of the array and updating them to the next two indices
 #include <iostream>
 #include <vector>
 using namespace std;
