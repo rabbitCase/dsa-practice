@@ -3,7 +3,23 @@
 #include <iostream>
 #include <bits/stdc++.h>
 using namespace std;
-//pending O(log(m*n)) solution
+//O(log(m*n)) solution : start from the top right and move in a staircase like manner i.e move down if cell value < target. If cell value > target, it's in the same row, so start going left until you find it.
+class Solution {
+public:
+    bool searchMatrix(vector<vector<int>>& matrix, int target) {
+        int m = matrix.size();
+        int n = matrix[0].size();
+        int i = 0, j = n - 1;
+        while(i < m && j >= 0){
+            if(matrix[i][j] == target){
+                return true;
+            }
+            matrix[i][j] < target ? i++ : j--;
+        }
+        return false;
+    }
+};
+//Previous solution
 class Solution {
 public:
     bool searchMatrix(vector<vector<int>>& matrix, int target) {
