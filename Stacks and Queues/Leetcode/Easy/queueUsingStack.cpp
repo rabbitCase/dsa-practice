@@ -1,3 +1,5 @@
+//Leetcode Easy 232
+//We need two stack, one for enqueue, one for dequeue. When pushing, we just push to stack1. When we need to dequeue, we need the bottom element in stack1, so we start popping stack1 and store them in stack2 so the order is reversed. Finally we pop from stack2 for dequeue. Ensure stack2 is empty before reversing stack1 otherwise new elements will be added to stack2 which would be popped first instead of the already remaining elements in stack2 (which should have been popped first)
 #include <iostream>
 #include <stack>
 using namespace std;
