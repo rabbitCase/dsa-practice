@@ -1,3 +1,5 @@
+//Leetcode Medium 46
+//Recursive backtracking where for every element in the array we dfs the entire array, appending all elements along the way. When we hit a base case(length of current solution = length of given array), we start popping elements so that we can explore other elements in the recursion tree. Every function call will have a for loop for traversal along the entire input array, therefore all paths are explored. We also check if the element has already been used in the current permutation cycle so as to not avoid repetition and unwanted elements.
 #include <iostream>
 #include <vector>
 using namespace std;
