@@ -1,4 +1,4 @@
-//Leetcoed Easy 2351
+//Leetcode Easy 2351
 //current char is used as index in an array. The first index to reach value > 1 is the first letter to appear twice
 #include <iostream>
 #include <vector>
