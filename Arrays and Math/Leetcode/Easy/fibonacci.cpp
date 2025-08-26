@@ -1,3 +1,5 @@
+//Leetcode Easy 509
+//Memoize function calls to improve time complexity
 #include <iostream>
 #include <vector>
 using namespace std;
