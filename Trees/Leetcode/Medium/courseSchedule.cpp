@@ -1,3 +1,5 @@
+//Leetcode medium 207
+//Eventually we have to find a cycle in the graph, so we build the graph first and then perform recursive dfs on every node. A cycle exists if we meet the same node on any path we traverse in the graph
 #include <iostream>
 #include <vector>
 using namespace std;
