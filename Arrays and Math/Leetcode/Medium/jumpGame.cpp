@@ -1,4 +1,5 @@
 //Leetcode medium 55
+//calculate the maximum distance we can jump from each index taking into account the distance we have covered so far as well. If max jump distance < next index, we are stuck
 #include <iostream>
 #include <vector>
 class Solution {
