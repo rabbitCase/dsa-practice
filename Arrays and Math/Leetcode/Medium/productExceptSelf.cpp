@@ -14,7 +14,7 @@ public:
         We can shift prefix array by one unit to the right
         and Post fix array to the left by adding extra 1 to the left
         and right respectively so that we can write
-        result[i]=prefix[i]+postfix[i], this will prevent
+        result[i]=prefix[i] * postfix[i], this will prevent
         out of bounds error when, for ex, i=0
         example: [1,2,3,4]
         prefix: [(1),1,2,6,24]
